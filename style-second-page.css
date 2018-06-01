@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background:  #849171;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bowlby One SC', cursive;
+    color: #6F6C69;
+    line-height: 1.8;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main__title {
+    background-color: grey;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    border-radius: 4px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section__box {
+    width: 95%;
+    border: 2px solid #6F6C69;
+    margin: 5px 2px;
+}
+
+.section__box--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__box img {
+    width: 100%;
+    border-bottom: 2px solid #6F6C69;
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+}
+
+.section__box img:hover {
+    opacity: 1;
+}
+
+.section__box h1 {
+    color: #6F6C69;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.section__box p {
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.section__box--article {
+    color: #000000;
+}
+
+.section__box--article:hover {
+    color: grey;
+}
+
+.section__box--button {
+    padding: 5px 20px;
+    background: #000000;
+    border: 1px solid #000000;
+    margin-bottom: 15px;
+    z-index: 0;
+    border-radius: 4px;
+}
+
+.section__box--button a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 3;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.section__box--button:hover {
+    background: #ffffff;
+    border: 2px solid #000000;
+}
+
+.section__box--button a:hover {
+    color: #000000;
+}
+
+
+@media (min-width: 400px) {
+    .header {margin-bottom: 10px;}
+    .main__title {margin: 0 0 20px 0;}
+    .main {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px}
+}
+
+
+@media (min-width: 700px) {
+    .section__box {max-width: 800px; max-height: 250px; display: flex; justify-content: center;}
+    .section__box img {max-width: 376px; border-right: 2px solid #6F6C69; border-bottom: none;}
+    .section__box--flex {display: flex; flex-direction: column; justify-content: center}
+    footer {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+    .footer__text {margin: 40px 20px;}
+    .footer__icons {margin: 40px 20px;}
+    .footer__icons img {margin: 0 5px}
+}
